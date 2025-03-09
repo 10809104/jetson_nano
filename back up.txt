@@ -1,0 +1,20 @@
+新增/修改
+
+git remote add origin https://github.com/10809104/jetson_nano.git
+
+git add .
+
+git commit -m "backup"
+
+git branch -M main  # 確保在 main 分支
+
+git push -u origin main
+
+移除/檢查
+
+git remote remove origin
+
+git remote add origin https://github.com/10809104/jetson_nano.git
+
+git remote -v
+
