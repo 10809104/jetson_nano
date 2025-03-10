@@ -1,3 +1,4 @@
+cd 下載/kikkoh
 新增/修改
 
 git init

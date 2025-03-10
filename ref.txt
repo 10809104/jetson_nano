@@ -93,3 +93,13 @@ sudo mount -t debugfs none /sys/kernel/debug
 sudo grep -C 4 spi1 /sys/kernel/debug/pinctrl/700008d4.pinmux/pinmux-pins
 
 sudo cat /sys/kernel/debug/tegra_pinctrl_reg | grep -i spi
+
+快速切換prime/JetsonIO
+p2j
+sudo cp /boot/extlinux/extlinux.conf /boot/extlinux/prime_backup.txt
+sudo cp /boot/extlinux/backup.txt /boot/extlinux/extlinux.conf
+
+j2p
+sudo cp /boot/extlinux/extlinux.conf /boot/extlinux/backup.txt
+sudo cp /boot/extlinux/extlinux.conf.jetson-io-backup /boot/extlinux/extlinux.conf
+
